@@ -1,41 +1,37 @@
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
+score = int(input("Enter your score: "))
 
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-print(A.union(B))
+if score < 50:
+    print(f"Your grade is F")
+elif score <= 59 and score >= 50:
+    print(f"Your grade is D")
+elif score <= 69 and score >= 60:
+    print(f"Your grade is C")
+elif score <= 89 and score >= 70:
+    print(f"Your grade is B")
+elif score <= 100 and score >= 90:
+    print(f"Your grade is A")
+else:
+    print(f"Score no valid")
 
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-A.intersection(B)
+    month = input("Enter the current month: ").upper()
 
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-A.issubset(B)
+if month == "SEPTEMBER" or month == "OCTOBER" or month == "NOVEMBER":
+    print(f"The current season is Autumn")
+elif month == "DECEMBER" or month == "JANUARY" or month == "FEBRUARY":
+    print(f"The current season is Winter")
+elif month == "MARCH" or month == "APRIL" or month == "MAY":
+    print(f"The current season is Spring")
+elif month == "JUNE" or month == "JULY" or month == "AUGUST":
+    print(f"The current season is Summer")
+else:
+    print(f"Invalid Data")
 
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-A.isdisjoint(B)
+fruits = ['Bannana', 'Orange', 'Apple', 'Strawberry']
+newFruit = input("Enter a fruit: ").lower()
 
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-print(A.union(B))
-
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-print(B.union(A))
-
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-A.symmetric_difference(B)
-
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-del A
-
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-del B
-
-
-
+if newFruit in fruits:
+    print(f"The {newFruit} it's already in the list: ")
+else:
+    print(f"Adding the {newFruit}...")
+    fruits.append(newFruit)
+print(fruits)

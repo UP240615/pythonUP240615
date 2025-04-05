@@ -1,15 +1,22 @@
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-A = {19, 22, 24, 20, 25, 26}
-B = {19, 22, 20, 25, 26, 24, 28, 27}
-age = [22, 19, 24, 25, 26, 24, 25, 24]
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-len(it_companies)
+age= int(input("introduza su edad"))
+if age > 18:
+    print('You are old enough to learn to drive')
+if age < 18: ('You need 3 more years to learn to drive')
+yourAge = int(input("Enter your age: "))
+myAge = 19
 
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-it_companies.add("Twitter")
+if myAge > yourAge:
+    print(f"I'm {myAge-yourAge} older than you")
+elif myAge < yourAge:
+    print(f"You're {yourAge-myAge} older than me")
+else:
+    print(f'We are of the same age ')
+n1 = int(input(f"Enter number 1: "))
+n2 = int(input(f"Enter number 2: "))
 
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-it_companies.update(["canva", "Kicad", "Instagram"])
-
-it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-it_companies.remove("Amazon")
+if n1 > n2:
+    print(f"{n1} is greater than {n2}")
+elif n1 < n2:
+    print(f"{n2} is greater than {n1}")
+else:
+    print(f'The numbers are equal')
